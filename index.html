@@ -1,36 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=h2, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <style>
-       
-        [title$="es"]{
+        [href~="https"] {
             background-color: red;
         }
-    </style>
-</head>
-<body>
-    <ul>
-        <li>first</li>
-        <li>second</li>
-        <li>Third</li>
-        <li>fourth</li>
-        <li>fith</li>
-        <li>sixth</li>
-        <li>seventh</li>
-    </ul>
-    <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni labore alias dolores delectus quibusdam facilis tempore reiciendis a nemo laudantium?</p>
-    </div>
-    <a href="" title="links with href">link with href</a>
-    <a href="" title="link with title">link with title</a>
-    <a href="" title="with href and extra values">link with href2</a>
 
-    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquid placeat soluta!</p>
-    <!-- <img src="https://www.sliderrevolution.com/wp-content/uploads/2024/01/css-hover-effects-f.jpg" alt=""> -->
-</body>
+        .float-img {
+            float: right;
+            width: 100px;
+            
+        }
+        .float-img2{
+            float:left;
+            width:100px;
+            
+        }
+
+        .clear {
+            
+        }
+
+        .container {
+            width: 500px;
+            border: 1px solid #ccc;
+           
+        }
+    </style>
+    </head>
+
+    <body>
+        <ul>
+            <li>first</li>
+            <li>second</li>
+            <li>Third</li>
+            <li>fourth</li>
+            <li>fith</li>
+            <li>sixth</li>
+            <li>seventh</li>
+        </ul>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni labore alias dolores delectus quibusdam
+                facilis tempore reiciendis a nemo laudantium?</p>
+        </div>
+        <a href="index1.html" title="links with href">link with href</a>
+        <a href="" title="link with title">link with title</a>
+        <a href="http codinggita" title="with href and extra values">link with href2</a>
+
+        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquid placeat soluta!</p>
+        <!-- <img src="https://www.sliderrevolution.com/wp-content/uploads/2024/01/css-hover-effects-f.jpg" alt=""> -->
+
+        <div class="container">
+            <img src="https://images.pexels.com/photos/35802554/pexels-photo-35802554/free-photo-of-vibrant-pink-dahlia-flower-portrait-in-bloom.jpeg?cs=tinysrgb&dpr=1&w=500" alt="Sample Image" class="float-img">
+            <p>This is a paragraph of text that wraps around the floated image. It demonstrates how text flows naturally
+                around a floated element.</p>
+                <img src="https://images.pexels.com/photos/35802554/pexels-photo-35802554/free-photo-of-vibrant-pink-dahlia-flower-portrait-in-bloom.jpeg?cs=tinysrgb&dpr=1&w=500" alt="Sample Image" class="float-img2">
+            <p class="clear">This paragraph appears below the floated image due to the clear property.</p>
+             
+        </div>
+
+        
+    </body>
+
 </html>
